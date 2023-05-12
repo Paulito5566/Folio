@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Folio</title>
+	<link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+</head>
+<body>
 
+    <div class="blob-cont">
+        <div class="yellow blob"></div>
+        <div class="red blob"></div>
+        <div class="green blob"></div>
+      </div>
+        <nav>
+            <div class="logo">
+              <a href="#"><img src="logo.png" alt="Logo"></a>
+            </div>
+            <div class="middle">
+              <a href="#">Editor</a>
+              <a href="#">Portfolio preview</a>
+              <a href="#">Publish</a>
+            </div>
+            <div class="right">
+              <a href="#">Sign In</a>
+              <a href="#">Sign Up</a>
+            </div>
+          </nav>
+          <div>
+            <button id="pen-button">Pen</button>
+            <button id="rect-button">Rectangle</button>
+            <button id="circle-button">Circle</button>
+            <!-- Add more buttons for other tools as needed -->
+          </div>
+          <div>
+            <label for="color-picker">Color:</label>
+            <input type="color" id="color-picker" value="#000000">
+          </div>
+          <div id="container"></div>
+          <div id="background"></div>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
+<svg>
+    <filter id='noiseFilter'>
+      <feTurbulence 
+        type='fractalNoise' 
+        baseFrequency='0.6' 
+        stitchTiles='stitch'/>
+       <feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+          <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+          <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
+    </filter>
+    
+  </svg>
