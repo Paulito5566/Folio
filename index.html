@@ -4,6 +4,10 @@
 	<title>Folio</title>
 	<link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,29 +18,25 @@
       </div>
         <nav>
             <div class="logo">
-              <a href="#"><img src="logo.png" alt="Logo"></a>
+              <a href="index.html"><img src="a" alt="Logo"></a>
             </div>
             <div class="middle">
-              <a href="#">Editor</a>
-              <a href="#">Portfolio preview</a>
-              <a href="#">Publish</a>
+              <a href="/editor/editor.html">EDITOR</a>
+              <a href="#">PORTFOLIO PREVIEW</a>
+              <a href="#">PUBLISH</a>
             </div>
             <div class="right">
-              <a href="#">Sign In</a>
-              <a href="#">Sign Up</a>
+              <div class="avata">
+                <img src="/images/357697367045201.jpg" alt="Avatar">
+                <a href="#" class="acc">ACCOUNT</a>
+              </div>
             </div>
           </nav>
-          <div>
-            <button id="pen-button">Pen</button>
-            <button id="rect-button">Rectangle</button>
-            <button id="circle-button">Circle</button>
-            <!-- Add more buttons for other tools as needed -->
-          </div>
-          <div>
-            <label for="color-picker">Color:</label>
-            <input type="color" id="color-picker" value="#000000">
-          </div>
-          <div id="container"></div>
+<div id=main>
+  <h1 id="output"></h1>
+  <h2 id="enter">Enter the editor here</h2>
+  <button class="button-33" role="button">EDITOR</button>
+</div>>
           <div id="background"></div>
 
 	<script src="script.js"></script>
@@ -44,14 +44,14 @@
 </html>
 
 <svg>
-    <filter id='noiseFilter'>
-      <feTurbulence 
-        type='fractalNoise' 
-        baseFrequency='0.6' 
-        stitchTiles='stitch'/>
-       <feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
-          <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
-          <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
-    </filter>
+  <filter id='noiseFilter'>
+    <feTurbulence 
+      type='fractalNoise' 
+      baseFrequency='0.6' 
+      stitchTiles='stitch'/>
+     <feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+        <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+        <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
+  </filter>
     
   </svg>
