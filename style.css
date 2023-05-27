@@ -1,5 +1,16 @@
+@font-face {
+  font-family: 'n27regular';
+  src: url('/fonts/n27-regular-webfont.eot');
+  src: url('/fonts/n27-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/n27-regular-webfont.woff2') format('woff2'),
+       url('/fonts/n27-regular-webfont.woff') format('woff'),
+       url('/fonts/n27-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
 :root {
-    --bg: #ecdaaabe;
+    --bg: #ecececbe;
     --text: #151515;
     --yellow: #EDB74D;
     --red: #EB6666;
@@ -11,31 +22,42 @@ body {
     background-color: var(--bg);
  }
 nav {
+  font-family: 'n27regular';
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-    padding: 20px;
+    padding: 0px;
+    margin-top: 5px;
   }
   
   .logo img {
-    height: 40px;
+    height: 100px;
+
   }
-  
+  .logo {
+    margin: 0 20px
+  }
   .middle a {
-    margin: 0 10px;
-    color: #fff;
-    font-size: 16px;
+    margin: 0 20px;
+    color: #000000;
+    font-size: 22px;
     text-decoration: none;
   }
-  
   .right a {
-    margin: 0 10px;
-    color: #fff;
-    font-size: 16px;
+    padding: 10px;
+margin: 5px;
+    color: #000000;
+    font-size: 22px;
     text-decoration: none;
+    font-weight: bold;
+    border: 2px black solid;
+    border-radius: 7px;
   }
-  
+  .right {
+    margin: 0 15px;
+  }
+
   /* Hover effect */
   a:hover {
     color: #ccc;
@@ -132,3 +154,87 @@ body::before {
     60% {top: 250px; right: 100px;transform: scale(1);}
     100% {top: 250px; right: 0px; transform: scale(1);}
   }
+  #stroke-width-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #stroke-width-slider {
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  #stroke-width-label {
+    font-size: 16px;
+  }
+
+  a.acc {
+    border: 0px;
+    padding: 2px;
+    font-size: 14px;
+    color: aliceblue;
+    margin-right: 50px;
+    font-weight: 500;
+  }
+  div.avata {
+    display:-webkit-box;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+width: 120px;
+height: 35px;
+display:block
+text-align: center;
+background-color:rgba(240, 248, 255, 0.219);
+border: transparent solid;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+border-radius: 30px;
+
+  }
+  div.avata img {
+    padding: 2px;
+    display:-webkit-box;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+width: 30px;
+border-radius: 50%;
+  }
+  #main {
+  text-align: center;
+
+  }
+#output {
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size:100px
+}
+#enter {
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size:50px
+}
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 20px 50px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
